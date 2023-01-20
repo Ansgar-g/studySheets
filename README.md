@@ -6,7 +6,7 @@ The uploaded files are edited in no way other than that I have removed the usern
 ## what this project is about
 essentially, this project is about making a website where learning notes can be uploaded. Special focus will be put on the fact that you can search for learning notes according to the country, (the state), the school and other aspects.
 
-So far I have only implemented the function for registration and login. Based on this, further functions will be implemented. 
+So far I have implemented the scripts for registration and login. after being redirected to the profile, you can upload a learning note at "upload" or search for a learning note at "search". When searching, you can also use filters to find learning notes from your own region or school. 
 
 ## what each file does
 #### index.php:
