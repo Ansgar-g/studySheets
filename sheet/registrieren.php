@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "";
 $username = "";
 $password = "";
 $dbname = "";
@@ -17,10 +17,10 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO MyUsers (username, pwd)
 VALUES ('$user_username', '$user_password')";
 
-$sql_sel = "SELECT id, firstname, lastname FROM MyUsers WHERE username='$user_username'";
+$sql_sel = "SELECT * FROM MyUsers WHERE username = '$user_username'";
 $result = $conn->query($sql_sel);
 
-if ($result->num_rows > 0) {
+if ($result->num_rows == 0) {
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
     } else {
@@ -28,6 +28,7 @@ if ($result->num_rows > 0) {
     }
 }else{
     echo "Benutzername bereits vergeben";
+    echo $result->num_rows;
 }
 
 $conn->close();

@@ -1,0 +1,71 @@
+body {
+    background-color: #CBE6EF;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 0em;
+    margin-bottom: 0.8em;
+    color: #354b46;
+    text-decoration: underline 0.07em #e1b0c7;
+}
+
+h3 {
+    font-size: 3em;
+    color: #334a52;
+    text-decoration: underline 0.07em #e1b0c7;
+}
+
+.registrierung {
+    display: inline-block;
+    padding-right: 8em;
+    margin-left: 4em;
+}
+
+.anmeldung {
+    display: inline-block;
+    margin-left: 4em;
+}
+
+input[type="text"] {
+    font-size: 2em;
+    border-radius: 10px;
+    max-width: 9em;
+    padding-bottom: 0.2em;
+    margin-bottom: 1.3em;
+}
+
+input[type="password"] {
+    font-size: 2em;
+    border-radius: 10px;
+    max-width: 9em;
+    padding-bottom: 0.2em;
+    margin-bottom: 1.3em;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    font-size: 2.5em;
+    background-color: #e1b0c7;
+    margin-top: 0.3em;
+    margin-bottom: 2.5em;    
+}
+
+input[type="submit"]:hover {
+    background-color: #ecdcf3;
+}
+
+.ohne {
+    font-size: 2.5em;
+    display: inline-block;
+    padding-right: 1em;
+}
+
+.fehler {
+    color: red; 
+    position:absolute;
+    bottom:0.3em;
+    right:2em;
+    font-size: 1.2em;
+}
